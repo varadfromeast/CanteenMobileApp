@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderFragment"
+    android:id="@+id/OrderFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Food Item"
+        android:textSize="17dp"
+        android:layout_margin="7dp"
+        android:id="@+id/itemHeader"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Qty"
+        android:textSize="17dp"
+        android:layout_margin="7dp"
+        android:id="@+id/qtyHeader"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/totalText"
+        android:layout_below="@id/divider"
+        android:id="@+id/orderList"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/submitOrderButton"
+        android:text="TOTAL:"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_margin="10dp"
+        android:id="@+id/totalText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs.0.00"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/submitOrderButton"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_margin="10dp"
+        android:id="@+id/totalPriceText"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Submit Order"
+        android:id="@+id/submitOrderButton"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/itemHeader"
+        android:background="?android:attr/listDivider"/>
+
+</RelativeLayout>

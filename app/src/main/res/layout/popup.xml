@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="3dp"
+        android:layout_height="wrap_content"
+        android:minHeight="250dp"
+        android:id="@+id/popupImageView"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popupImageView"
+        android:text="MenuItem"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/itemNameText"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemNameText"
+        android:text="Description"
+        android:id="@+id/detailTextView"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popupImageView"
+        android:text="Price"
+        android:textSize="20dp"
+        android:gravity="right"
+        android:id="@+id/priceTextView"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="-"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/circle"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/numberPopupTextView"
+        android:layout_below="@id/detailTextView"
+        android:id="@+id/minusPopupButton"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/detailTextView"
+        android:id="@+id/numberPopupTextView"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/circle"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/numberPopupTextView"
+        android:layout_below="@id/detailTextView"
+        android:id="@+id/plusPopupButton"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numberPopupTextView"
+        android:layout_marginTop="25dp"
+        android:text="Add to Order"
+        android:id="@+id/addButton"/>
+
+</RelativeLayout>
